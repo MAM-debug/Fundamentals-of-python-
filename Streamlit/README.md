@@ -1,9 +1,9 @@
-# Streamlit Practice App - README
+# Streamlit Practice App
 
 ## 📋 Overview
 This is a simple Streamlit application designed to practice and demonstrate various Streamlit features and interactive widgets.
 
-## 🚀 Features Explored
+##  Features Explored
 
 ### ✅ Completed Features
 
@@ -70,13 +70,12 @@ This is a simple Streamlit application designed to practice and demonstrate vari
 
 ## 📁 Project Structure
 ```
-streamlit-app/
-├── app.py              # Main Streamlit application
-├── requirements.txt    # Python dependencies
+streamlit
+├── Practice.py              # Main Streamlit application
 └── README.md          # This documentation
 ```
 
-## 🛠️ How to Run
+##  How to Run
 
 1. Install Streamlit:
 ```bash
@@ -85,7 +84,7 @@ pip install streamlit
 
 2. Run the application:
 ```bash
-streamlit run app.py
+streamlit run Practice.py
 ```
 
 3. Open your browser and navigate to `http://localhost:8501`
@@ -106,7 +105,7 @@ streamlit run app.py
 4. Add data persistence with session state
 5. Deploy to Streamlit Cloud or other hosting services
 
-## 💡 Tips for Further Practice
+##  Tips for Further Practice
 
 - Try adding error handling for user inputs
 - Experiment with different widget parameters
@@ -120,7 +119,5 @@ streamlit run app.py
 - [Streamlit Gallery](https://streamlit.io/gallery)
 - [Streamlit API Reference](https://docs.streamlit.io/library/api-reference)
 
----
 
-*This README serves as both documentation and a learning checklist. Check off features as you implement them!*
 
