@@ -57,7 +57,7 @@ st.subheader("Multi-level expander example")
 col1,col2=st.columns(2)
 
 with col1:
-    with st.expander("Lets learn python"):
+    with st.expander("Lets learn pyth.on"):
         st.write("Pythom is a high level programmimg language use for data science,machine learning,web development and many more.")
         st.write("It is easy to learn and has a large community support.")
 
@@ -65,6 +65,40 @@ with col2:
     with st.expander("Lets learn Data Science"):
         st.write("Learn libraries like pandas for data manipularion")
         st.write("Learn numpy for numerical computing")
+
+st.divider()
+st.header("We will now learn about buttons in Streamlit")
+if st.button("CLICK HERE"):
+    st.write("You clicked the button made by me!")
+    st.balloons()
+
+
+st.divider
+
+st.subheader("Creating calculator using buttons")
+num1=st.number_input("Enter first number:")
+num2=st.number_input("Enter second number:")
+col1,col2,col3,col4=st.columns(4)
+with col1:
+    if st.button("ADD"):
+        st.write(f"The sum of {num1} and {num2} is {num1+num2}")
+with col2:
+    if st.button("Subtract"):
+        st.write(f"The difference of {num1} and {num2} is {num1-num2}")
+with col3:
+    if st.button("Product"):
+        st.write(f"The product of {num1} and {num2} is {num1*num2}")
+with col4:
+    if st.button("Divide"):
+        if num2!=0:
+            st.write(f"The division of {num1} by {num2} is {num1/num2}")
+        else:
+            st.error("Division by zero is not allowed.")
+st.divider()
+st.highlight("st.button has lots of use cases in creating interactive web apps using Streamlit like games,calendars etc.")
+
+
+
     
 
 
