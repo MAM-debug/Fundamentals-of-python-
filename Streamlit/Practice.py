@@ -72,7 +72,6 @@ if st.button("CLICK HERE"):
     st.write("You clicked the button made by me!")
     st.balloons()
 
-
 st.divider
 
 st.subheader("Creating calculator using buttons")
@@ -95,8 +94,21 @@ with col4:
         else:
             st.error("Division by zero is not allowed.")
 st.divider()
-st.highlight("st.button has lots of use cases in creating interactive web apps using Streamlit like games,calendars etc.")
 
+st.header("Exploring radio buttons and select boxes")
+st.subheader("Radio button examples")
+fav_color=st.radio("Select your fav coloor:",["red","blue","green","yellow"])
+st.write(f"Your fav color is {fav_color}")
+st.subheader("Radio button with conditional display")
+mood=st.radio("How is your mood today?",["Happy","Sad","Excited","Angry"])
+if mood=="Happy":
+    st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
+elif mood=="Sad":
+    st.audio("https://www.sample-videos.com/audio/mp3/crowd-cheering.mp3")
+elif mood=="Excited":
+    st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3")
+else:
+    st.write("😠 Angry mood - no music for you!")
 
 
     
